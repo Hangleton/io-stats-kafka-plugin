@@ -88,7 +88,7 @@ public class LinuxBrokerLogDirHealthMonitor implements BrokerLogDirHealthMonitor
 
     private void run() {
         try {
-            String path = String.format(PATH, "nvme0n1");
+            String path = String.format(PATH, "nvme2n1");
             String stat = new String(Files.readAllBytes(Paths.get(path)), Charset.defaultCharset());
 
             Instant timestamp = Instant.now();

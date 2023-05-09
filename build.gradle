@@ -11,6 +11,11 @@ allprojects {
 
 subprojects {
     apply plugin: 'java-library'
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(11)
+        }
+    }
 }
 
 project('ascii-tables') {
