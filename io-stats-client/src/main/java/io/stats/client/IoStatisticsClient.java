@@ -32,7 +32,7 @@ public class IoStatisticsClient {
         properties.put(BOOTSTRAP_SERVERS_CONFIG, args[0]);
         properties.put(DEFAULT_KEY_SERDE_CLASS_CONFIG, InstantSerde.class.getName());
         properties.put(DEFAULT_VALUE_SERDE_CLASS_CONFIG, IoStatisticsSerde.class.getName());
-        properties.put(APPLICATION_ID_CONFIG, "phoque2");
+        properties.put(APPLICATION_ID_CONFIG, "default-kstream-app");
         properties.put(COMMIT_INTERVAL_MS_CONFIG, "2000");
 
         try {
